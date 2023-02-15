@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, p, a, span, h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+main .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 90%;
+  margin: 0 5%;
+  padding: 30px 0;
+}
+main .wrapper .sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+main .wrapper .content-wrapper {
+  width: 65%;
+}
+main .wrapper .content-wrapper article {
+  width: 30%;
+  height: 500px;
+  border: solid 1px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+main .wrapper .content-wrapper article a {
+  display: flex;
+  flex-direction: column;
+}
+main .wrapper .content-wrapper article a .image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+main .wrapper .content-wrapper article a .image img {
+  width: 100%;
+  height: auto;
+}
+main .wrapper .content-wrapper article a .content {
+  display: flex;
+  flex-direction: column;
+}
+main .wrapper .content-wrapper article a .content .pop {
+  display: none;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  height: fit-content;
+  background: rgb(3, 37, 65);
+}
+header svg {
+  width: 300px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -17,7 +17,8 @@ var General = {
 			sortAscending : false,
 			getSortData: {
 				title: '.title',
-				popularity: '.pop'
+				popularity: '.pop',
+				date: '.tx'
 			}
 		});
     },
@@ -29,9 +30,6 @@ var General = {
 
     	var sort_by, sort_dir, filter_by;
 
-console.log(sort);
-
-    	// sort
     	if(sort === 'pop-asc') {
     		sort_by = 'popularity';
     		sort_dir = true;
@@ -44,6 +42,15 @@ console.log(sort);
     	} else if(sort === 'title-desc') {
     		sort_by = 'title';
     		sort_dir = false;
+    	} else if(sort === 'title-desc') {
+    		sort_by = 'title';
+    		sort_dir = false;
+		} else if(sort === 'date-asc') {
+			sort_by = 'date';
+			sort_dir = true;
+		} else if(sort === 'date-desc') {
+			sort_by = 'date';
+			sort_dir = false;
     	} else {
     		sort_by = 'title';
     		sort_dir = true;
@@ -56,8 +63,7 @@ console.log(sort);
 			filter_by = '.'+filter_by;
 		}
 
-	 jQuery('.content-wrapper').isotope({ sortBy: sort_by, sortAscending: sort_dir });
-		// jQuery('.content-wrapper').isotope({ sortBy: sort_by, sortAscending: sort_dir, filter: filter_by });
+		jQuery('.content-wrapper').isotope({ sortBy: sort_by, sortAscending: sort_dir, filter: filter_by });
     }
 };
 

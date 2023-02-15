@@ -74,7 +74,8 @@ main .wrapper .content-wrapper article a .content {
   display: flex;
   flex-direction: column;
 }
-main .wrapper .content-wrapper article a .content .pop {
+main .wrapper .content-wrapper article a .content .pop,
+main .wrapper .content-wrapper article a .content .tx {
   display: none;
 }
 

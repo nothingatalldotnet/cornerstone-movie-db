@@ -12,12 +12,16 @@
                     <option value="pop-desc">Popularity Descending</option>
                     <option value="title-asc">Title Ascending</option>
                     <option value="title-desc">Title Descending</option>
+                    <option value="date-asc">Release Date Ascending</option>
+                    <option value="date-desc">Release Date Descending</option>
                 </select>
             </div>
             <div class="filters">
                 <h2>Filters</h2>
                 <select class="filter">
-
+                    <option value="all">All Genres</option>
+                    <option value="action">Genre - Action</option>
+                    <option value="">Genre - History</option>
                 </select>
             </div>
             <div class="filters">

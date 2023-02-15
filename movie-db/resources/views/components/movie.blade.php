@@ -7,6 +7,7 @@
             <h3 class="title">{{ $result['title'] }}</h2>
             <h4 class="">{{ $result['release_date'] }}</h3>
             <span class="pop">{{ $result['popularity'] }}</span>
+            <span class="tx">{{ $iso_date }}</span>
         </div>
     </a>
 </article>
